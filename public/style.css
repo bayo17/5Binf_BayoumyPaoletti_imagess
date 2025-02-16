@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+#public-page, #admin-page {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 500px; /* Impostiamo una larghezza massima per le immagini */
+    height: auto;
+    border-radius: 10px;
+}
+
+#prev-btn, #next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+#admin-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#admin-btn:hover {
+    background-color: #0056b3;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#login-form input, #login-form button {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-form button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#login-form button:hover {
+    background-color: #218838;
+}
+
+#image-management {
+    margin-top: 20px;
+    display : block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#upload-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+#upload-btn:hover {
+    background-color: #138496;
+}
+
+#logout-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#logout-btn:hover {
+    background-color: #c82333;
+}
+

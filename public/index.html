@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA - Galleria Immagini</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" defer src="script.js"></script>
+    <script src="/componenti/login.js"></script>
+    <script src="/componenti/navigator.js"></script>
+</head>
+<body>
+    <div id="spa-container">
+        <!-- Pagina pubblica -->
+        <div id="public-page" class="page visible">
+            <h1>Galleria Immagini</h1>
+            <div class="carousel">
+                <button id="prev-btn">&#10094;</button>
+                <img id="carousel-image" src="image1.jpg" alt="Immagine 1">
+                <button id="next-btn">&#10095;</button>
+            </div>
+            <button id="admin-btn">login</button>
+        </div>
+
+        <!-- Pagina admin, inizialmente nascosta -->
+        <div id="admin-page" class="page hidden">
+            <h1>Admin - Gestione Immagini</h1>
+            <div id="divlogin" class="visible">
+                <form id="login-form">
+                    <input type="text" id="name" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit" id="login">Login</button>
+                </form>
+            </div>
+
+            <div id="private" class="hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Immagine</th>
+                            <th>URL</th>
+                            <th>Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody id="image-table"></tbody>
+                </table>
+                <input type="file" id="image-upload">
+                <button id="upload-btn">Carica Immagine</button>
+                <button id="logout-btn" onclick="window.location.hash='public-page'">Logout</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
