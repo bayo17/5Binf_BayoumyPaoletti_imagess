@@ -26,4 +26,3 @@ const createNavigator = (parentElement) => {
     render();
   };
 export {createNavigator};
-  
