@@ -1,12 +1,12 @@
 let myToken = "";
 
-fetch("conf.json")
+fetch("/conf.json")
   .then((r) => r.json())
   .then((conf) => {
     myToken = conf.cacheToken;
   });
 
-export const createLogin = () => {
+const createLogin = () => {
   const inputName = document.querySelector("#name");
   const inputPassword = document.querySelector("#password");
   const loginButton = document.querySelector("#login");

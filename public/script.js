@@ -1,3 +1,4 @@
+import { createNavigator } from "/componenti/navigator.js";
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 const carouselImage = document.getElementById('carousel-image');
@@ -21,6 +22,7 @@ function showNextImage() {
     currentIndex = (currentIndex + 1) % images.length;
     updateCarousel();
 }
-prevBtn.addEventListener('click', showPrevImage);
-nextBtn.addEventListener('click', showNextImage);
+prevBtn.onclick = () => {showPrevImage()};
+nextBtn.onclick = () => {showNextImage()};
 updateCarousel();
+const navigator = createNavigator(document.querySelector("#spa-container"));

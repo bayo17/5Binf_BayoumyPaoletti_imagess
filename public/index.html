@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" defer src="script.js"></script>
     <script src="/componenti/login.js"></script>
-    <script src="/componenti/navigator.js"></script>
 </head>
 <body>
     <div id="spa-container">
@@ -16,7 +15,7 @@
             <h1>Galleria Immagini</h1>
             <div class="carousel">
                 <button id="prev-btn">&#10094;</button>
-                <img id="carousel-image" src="image1.jpg" alt="Immagine 1">
+                <img id="carousel-image" src="/assets/immagine1.jpeg" alt="Immagine 1">
                 <button id="next-btn">&#10095;</button>
             </div>
             <button id="admin-btn">login</button>
@@ -25,14 +24,13 @@
         <!-- Pagina admin, inizialmente nascosta -->
         <div id="admin-page" class="page hidden">
             <h1>Admin - Gestione Immagini</h1>
-            <div id="divlogin" class="visible">
+            <div id="divlogin" class="hidden">
                 <form id="login-form">
                     <input type="text" id="name" placeholder="Username" required>
                     <input type="password" id="password" placeholder="Password" required>
                     <button type="submit" id="login">Login</button>
                 </form>
             </div>
-
             <div id="private" class="hidden">
                 <table>
                     <thead>

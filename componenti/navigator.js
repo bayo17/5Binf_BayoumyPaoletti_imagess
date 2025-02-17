@@ -1,4 +1,4 @@
-export const createNavigator = (parentElement) => {
+const createNavigator = (parentElement) => {
     const pages = Array.from(parentElement.querySelectorAll(".page"));
   
     const hide = (elements) => {
@@ -25,5 +25,5 @@ export const createNavigator = (parentElement) => {
     window.addEventListener("popstate", render);
     render();
   };
-
+export {createNavigator};
   
